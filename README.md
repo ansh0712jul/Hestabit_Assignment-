@@ -112,12 +112,6 @@ Authorization: Bearer <access>
 - **DELETE** `/api/mappings/{id}/` → remove mapping  
 
 
-## 🗂️ Data Modeling  
-Here’s an overview of the ER Diagram / Data Model used in the project:  
-
-📸 **Add your screenshot(s) below**  
-
----
 
 ## 📌 Tech Stack  
 
@@ -137,12 +131,6 @@ Here’s an overview of the ER Diagram / Data Model used in the project:
 
 ---
 
-## 🤝 Contributing  
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to open a **PR** or report a bug.  
-
----
 
 ## 📄 License  
 
