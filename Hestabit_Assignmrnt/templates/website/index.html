@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home • Hestabit Healthcare{% endblock %}
+{% block content %}
+  <h1>Backend is running</h1>
+  <p>Browse demo pages or call the REST API endpoints.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Doctors</h3>
+      <p>Total: {{ doctor_count }}</p>
+      <a class="btn" href="{{ url('doctors_page') }}">View doctors</a>
+    </div>
+    <div class="card">
+      <h3>Patients</h3>
+      <p>Total: {{ patient_count }}</p>
+      <a class="btn" href="{{ url('patients_page') }}">View patients</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>Quick API Guide</h2>
+    <pre>
+POST /api/auth/register/  {"name":"Alice","email":"alice@example.com","password":"Secret123!"}
+POST /api/auth/login/     {"username":"alice@example.com","password":"Secret123!"} -> {access, refresh}
+GET  /api/patients/       Authorization: Bearer &lt;access&gt;
+POST /api/patients/       Authorization: Bearer &lt;access&gt;  {"name":"...","age":30,"gender":"M","address":"..."}
+    </pre>
+  </section>
+{% endblock %}

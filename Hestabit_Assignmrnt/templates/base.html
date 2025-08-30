@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Hestabit Healthcare{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="{{ static('css/main.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <header class="container">
+      <a class="brand" href="{{ url('home') }}">Hestabit Healthcare</a>
+      <nav>
+        <a href="{{ url('doctors_page') }}">Doctors</a>
+        <a href="{{ url('patients_page') }}">Patients</a>
+        <a href="/admin/">Admin</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="container footer">
+      <small>&copy; {{ 2025 }} Hestabit</small>
+    </footer>
+  </body>
+</html>

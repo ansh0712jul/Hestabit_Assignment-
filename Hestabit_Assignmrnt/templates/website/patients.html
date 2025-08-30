@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Patients{% endblock %}
+{% block content %}
+  <h1>Patients</h1>
+  {% if patients %}
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Age</th><th>Gender</th><th>Address</th><th>Created By</th></tr>
+      </thead>
+      <tbody>
+        {% for p in patients %}
+          <tr>
+            <td>{{ p.name }}</td>
+            <td>{{ p.age }}</td>
+            <td>{% if p.gender == "M" %}Male{% elif p.gender == "F" %}Female{% else %}Other{% endif %}</td>
+            <td>{{ p.address }}</td>
+            <td>{{ p.created_by.username }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No patients yet.</p>
+  {% endif %}
+{% endblock %}
