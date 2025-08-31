@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# Envs
+.env
+.venv/
+venv/
+
+# Node / front-end
+node_modules/
+
+# Byte-compiled / C extensions
+build/
+dist/
+
+# VCS
+.git
+.gitignore
+.dockerignore
+
+# Django static/media (if collected locally)
+staticfiles/
+media/
