@@ -1,6 +1,6 @@
 # 🏥 WhatBytes Healthcare  
 
-A **Healthcare Management System** built with **Django 5**, **Django REST Framework (DRF)**, **JWT Authentication**, and **Jinja2 Templates**.  
+**Hestabit- Healthcare Management System** built with **Django 5**, **Django REST Framework (DRF)**, **JWT Authentication**, and **Jinja2 Templates**.  
 It provides both **web pages (Jinja)** and **REST APIs** for managing patients, doctors, and patient–doctor mappings.  
 
 ---
